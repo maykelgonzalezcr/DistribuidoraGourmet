@@ -123,5 +123,10 @@ namespace CapaLogicaNegocios
         {
             return produccionAD.Listar();
         }
+
+        public Producto[] ListarProductos()
+        {
+            return productoAD.Listar();
+        }
     }
 }

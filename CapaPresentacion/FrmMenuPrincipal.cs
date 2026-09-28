@@ -92,5 +92,11 @@ namespace CapaPresentacion
             FrmRecetaProducto frmRecetaProducto = new FrmRecetaProducto(_recetaProductoLN);
             frmRecetaProducto.Show();
         }
+
+        private void btnProduccion_Click(object sender, EventArgs e)
+        {
+            FrmProduccion frmProduccion = new FrmProduccion(_produccionLN);
+            frmProduccion.Show();
+        }
     }
 }
