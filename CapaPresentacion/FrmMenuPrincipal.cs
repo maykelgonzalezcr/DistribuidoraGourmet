@@ -98,5 +98,11 @@ namespace CapaPresentacion
             FrmProduccion frmProduccion = new FrmProduccion(_produccionLN);
             frmProduccion.Show();
         }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            FrmVenta frmVenta = new FrmVenta(_ventaLN);
+            frmVenta.Show();
+        }
     }
 }

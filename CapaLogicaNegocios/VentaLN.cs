@@ -124,5 +124,20 @@ namespace CapaLogicaNegocios
         {
             return ventaAD.Listar();
         }
+
+        public Cliente[] ListarClientes()
+        {
+            return clienteAD.Listar();
+        }
+
+        public Cajero[] ListarCajeros()
+        {
+            return cajeroAD.Listar();
+        }
+
+        public Produccion[] ListarProducciones()
+        {
+            return produccionAD.Listar();
+        }
     }
 }

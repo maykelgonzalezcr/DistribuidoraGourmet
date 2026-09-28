@@ -96,11 +96,23 @@
             btnProduccion.UseVisualStyleBackColor = true;
             btnProduccion.Click += btnProduccion_Click;
             // 
+            // btnVentas
+            // 
+            btnVentas = new Button();
+            btnVentas.Location = new Point(98, 319);
+            btnVentas.Name = "btnVentas";
+            btnVentas.Size = new Size(144, 31);
+            btnVentas.TabIndex = 6;
+            btnVentas.Text = "Ventas";
+            btnVentas.UseVisualStyleBackColor = true;
+            btnVentas.Click += btnVentas_Click;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 600);
+            ClientSize = new Size(855, 660);
+            Controls.Add(btnVentas);
             Controls.Add(btnProduccion);
             Controls.Add(btnRecetas);
             Controls.Add(btnCajeros);
@@ -120,5 +132,6 @@
         private Button btnCajeros;
         private Button btnRecetas;
         private Button btnProduccion;
+        private Button btnVentas;
     }
 }
