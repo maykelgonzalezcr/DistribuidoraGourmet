@@ -103,6 +103,16 @@ namespace CapaLogicaNegocios
             return recetaProductoAD.Listar();
         }
 
+        public Producto[] ListarProductos()
+        {
+            return productoAD.Listar();
+        }
+
+        public Ingrediente[] ListarIngredientes()
+        {
+            return ingredienteAD.Listar();
+        }
+
         public RecetaProducto? BuscarPorID(int id)
         {
             return recetaProductoAD.BuscarPorID(id);

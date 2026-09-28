@@ -86,5 +86,11 @@ namespace CapaPresentacion
             FrmCajero frmCajero = new FrmCajero(_cajeroLN);
             frmCajero.Show();
         }
+
+        private void btnRecetas_Click(object sender, EventArgs e)
+        {
+            FrmRecetaProducto frmRecetaProducto = new FrmRecetaProducto(_recetaProductoLN);
+            frmRecetaProducto.Show();
+        }
     }
 }
