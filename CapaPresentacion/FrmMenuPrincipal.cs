@@ -80,5 +80,11 @@ namespace CapaPresentacion
             FrmCliente frmCliente = new FrmCliente(_clienteLN);
             frmCliente.Show();
         }
+
+        private void btnCajeros_Click(object sender, EventArgs e)
+        {
+            FrmCajero frmCajero = new FrmCajero(_cajeroLN);
+            frmCajero.Show();
+        }
     }
 }

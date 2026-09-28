@@ -63,11 +63,23 @@
             btnClientes.UseVisualStyleBackColor = true;
             btnClientes.Click += btnClientes_Click;
             // 
+            // btnCajeros
+            // 
+            btnCajeros = new Button();
+            btnCajeros.Location = new Point(98, 178);
+            btnCajeros.Name = "btnCajeros";
+            btnCajeros.Size = new Size(144, 31);
+            btnCajeros.TabIndex = 3;
+            btnCajeros.Text = "Cajeros";
+            btnCajeros.UseVisualStyleBackColor = true;
+            btnCajeros.Click += btnCajeros_Click;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 435);
+            ClientSize = new Size(855, 475);
+            Controls.Add(btnCajeros);
             Controls.Add(btnClientes);
             Controls.Add(btnProductos);
             Controls.Add(btnIngredientes);
@@ -81,5 +93,6 @@
         private Button btnIngredientes;
         private Button btnProductos;
         private Button btnClientes;
+        private Button btnCajeros;
     }
 }
