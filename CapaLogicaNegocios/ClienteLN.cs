@@ -34,12 +34,12 @@ namespace CapaLogicaNegocios
                 return "El apellido no puede estar vacío.";
             }
 
-            if (cliente.FechaNacimiento >= DateTime.Today)
+            if (cliente.FechaNacimiento.Date >= DateTime.Today)
             {
                 return "La fecha de nacimiento debe ser anterior al día actual.";
             }
 
-            if (cliente.FechaRegistro > DateTime.Today)
+            if (cliente.FechaRegistro.Date > DateTime.Today)
             {
                 return "La fecha de registro no puede ser mayor al día actual.";
             }

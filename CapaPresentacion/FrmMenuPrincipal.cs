@@ -74,5 +74,11 @@ namespace CapaPresentacion
             FrmProducto frmProducto = new FrmProducto(_productoLN);
             frmProducto.Show();
         }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FrmCliente frmCliente = new FrmCliente(_clienteLN);
+            frmCliente.Show();
+        }
     }
 }

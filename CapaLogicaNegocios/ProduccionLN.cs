@@ -54,7 +54,7 @@ namespace CapaLogicaNegocios
                 return "La cantidad producida debe ser mayor que cero.";
             }
 
-            if (fechaProduccion > DateTime.Today)
+            if (fechaProduccion.Date > DateTime.Today)
             {
                 return "La fecha de producción no puede ser mayor al día actual.";
             }

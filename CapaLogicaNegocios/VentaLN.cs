@@ -79,7 +79,7 @@ namespace CapaLogicaNegocios
                 return "No hay suficiente cantidad disponible para realizar la venta.";
             }
 
-            if (fechaVenta > DateTime.Today)
+            if (fechaVenta.Date > DateTime.Today)
             {
                 return "La fecha de venta no puede ser mayor al día actual.";
             }

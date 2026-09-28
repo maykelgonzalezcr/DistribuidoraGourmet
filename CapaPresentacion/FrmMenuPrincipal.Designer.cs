@@ -52,11 +52,23 @@
             btnProductos.UseVisualStyleBackColor = true;
             btnProductos.Click += btnProductos_Click;
             // 
+            // btnClientes
+            // 
+            btnClientes = new Button();
+            btnClientes.Location = new Point(98, 131);
+            btnClientes.Name = "btnClientes";
+            btnClientes.Size = new Size(144, 31);
+            btnClientes.TabIndex = 2;
+            btnClientes.Text = "Clientes";
+            btnClientes.UseVisualStyleBackColor = true;
+            btnClientes.Click += btnClientes_Click;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(855, 435);
+            Controls.Add(btnClientes);
             Controls.Add(btnProductos);
             Controls.Add(btnIngredientes);
             Name = "FrmMenuPrincipal";
@@ -68,5 +80,6 @@
 
         private Button btnIngredientes;
         private Button btnProductos;
+        private Button btnClientes;
     }
 }

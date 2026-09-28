@@ -38,22 +38,22 @@ namespace CapaLogicaNegocios
                 return "El apellido no puede estar vacío.";
             }
 
-            if (cajero.FechaNacimiento >= DateTime.Today)
+            if (cajero.FechaNacimiento.Date >= DateTime.Today)
             {
                 return "La fecha de nacimiento no es válida.";
             }
 
-            if (cajero.FechaNacimiento.AddYears(18) > DateTime.Today)
+            if (cajero.FechaNacimiento.AddYears(18).Date > DateTime.Today)
             {
                 return "El cajero debe ser mayor de edad.";
             }
 
-            if (cajero.FechaIngreso < cajero.FechaNacimiento)
+            if (cajero.FechaIngreso.Date < cajero.FechaNacimiento.Date)
             {
                 return "La fecha de ingreso no puede ser menor que la fecha de nacimiento.";
             }
 
-            if (cajero.FechaIngreso > DateTime.Today)
+            if (cajero.FechaIngreso.Date > DateTime.Today)
             {
                 return "La fecha de ingreso no puede ser mayor al día actual.";
             }
