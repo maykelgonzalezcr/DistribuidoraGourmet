@@ -8,12 +8,7 @@ namespace CapaLogicaNegocios
 {
     public class IngredienteLN
     {
-        private IngredienteAD ingredienteAD;
-
-        public IngredienteLN(IngredienteAD ingredienteAD)
-        {
-            this.ingredienteAD = ingredienteAD;
-        }
+        private IngredienteAD ingredienteAD = new();
 
         private string? ValidarDatos(Ingrediente ingrediente)
         {

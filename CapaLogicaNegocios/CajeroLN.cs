@@ -8,12 +8,7 @@ namespace CapaLogicaNegocios
 {
     public class CajeroLN
     {
-        private CajeroAD cajeroAD;
-
-        public CajeroLN(CajeroAD cajeroAD)
-        {
-            this.cajeroAD = cajeroAD;
-        }
+        private CajeroAD cajeroAD = new();
 
         private string? ValidarDatos(Cajero cajero)
         {

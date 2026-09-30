@@ -7,8 +7,8 @@ namespace CapaAccesoDatos
 {
     public class CajeroAD
     {
-        private Cajero[] cajeros = new Cajero[15];
-        private int contador = 0;
+        private static Cajero[] cajeros = new Cajero[15];
+        private static int contador = 0;
 
         public bool Agregar(Cajero cajero)
         {

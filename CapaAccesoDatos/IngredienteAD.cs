@@ -7,8 +7,8 @@ namespace CapaAccesoDatos
 {
     public class IngredienteAD
     {
-        private Ingrediente[] Ingredientes = new Ingrediente[50];
-        private int contador = 0;
+        private static Ingrediente[] Ingredientes = new Ingrediente[50];
+        private static int contador = 0;
         
         public bool Agregar(Ingrediente ingrediente)
         {

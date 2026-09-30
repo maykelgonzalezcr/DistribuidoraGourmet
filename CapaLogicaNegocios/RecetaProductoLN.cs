@@ -8,19 +8,9 @@ namespace CapaLogicaNegocios
 {
     public class RecetaProductoLN
     {
-        private RecetaProductoAD recetaProductoAD;
-        private ProductoAD productoAD;
-        private IngredienteAD ingredienteAD;
-
-        public RecetaProductoLN(
-            RecetaProductoAD recetaProductoAD,
-            ProductoAD productoAD,
-            IngredienteAD ingredienteAD)
-        {
-            this.recetaProductoAD = recetaProductoAD;
-            this.productoAD = productoAD;
-            this.ingredienteAD = ingredienteAD;
-        }
+        private RecetaProductoAD recetaProductoAD = new();
+        private ProductoAD productoAD = new();
+        private IngredienteAD ingredienteAD = new();
 
         private string? ValidarDatos(
             RecetaProducto receta)

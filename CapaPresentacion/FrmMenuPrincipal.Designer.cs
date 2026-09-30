@@ -30,11 +30,16 @@
         {
             btnIngredientes = new Button();
             btnProductos = new Button();
+            btnClientes = new Button();
+            btnCajeros = new Button();
+            btnRecetas = new Button();
+            btnProduccion = new Button();
+            btnVentas = new Button();
             SuspendLayout();
             // 
             // btnIngredientes
             // 
-            btnIngredientes.Location = new Point(98, 37);
+            btnIngredientes.Location = new Point(53, 35);
             btnIngredientes.Name = "btnIngredientes";
             btnIngredientes.Size = new Size(144, 31);
             btnIngredientes.TabIndex = 0;
@@ -44,7 +49,7 @@
             // 
             // btnProductos
             // 
-            btnProductos.Location = new Point(98, 84);
+            btnProductos.Location = new Point(53, 82);
             btnProductos.Name = "btnProductos";
             btnProductos.Size = new Size(144, 31);
             btnProductos.TabIndex = 1;
@@ -54,8 +59,7 @@
             // 
             // btnClientes
             // 
-            btnClientes = new Button();
-            btnClientes.Location = new Point(98, 131);
+            btnClientes.Location = new Point(53, 129);
             btnClientes.Name = "btnClientes";
             btnClientes.Size = new Size(144, 31);
             btnClientes.TabIndex = 2;
@@ -65,8 +69,7 @@
             // 
             // btnCajeros
             // 
-            btnCajeros = new Button();
-            btnCajeros.Location = new Point(98, 178);
+            btnCajeros.Location = new Point(53, 176);
             btnCajeros.Name = "btnCajeros";
             btnCajeros.Size = new Size(144, 31);
             btnCajeros.TabIndex = 3;
@@ -76,8 +79,7 @@
             // 
             // btnRecetas
             // 
-            btnRecetas = new Button();
-            btnRecetas.Location = new Point(98, 225);
+            btnRecetas.Location = new Point(53, 223);
             btnRecetas.Name = "btnRecetas";
             btnRecetas.Size = new Size(144, 31);
             btnRecetas.TabIndex = 4;
@@ -87,8 +89,7 @@
             // 
             // btnProduccion
             // 
-            btnProduccion = new Button();
-            btnProduccion.Location = new Point(98, 272);
+            btnProduccion.Location = new Point(53, 270);
             btnProduccion.Name = "btnProduccion";
             btnProduccion.Size = new Size(144, 31);
             btnProduccion.TabIndex = 5;
@@ -98,8 +99,7 @@
             // 
             // btnVentas
             // 
-            btnVentas = new Button();
-            btnVentas.Location = new Point(98, 319);
+            btnVentas.Location = new Point(53, 317);
             btnVentas.Name = "btnVentas";
             btnVentas.Size = new Size(144, 31);
             btnVentas.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 660);
+            ClientSize = new Size(654, 388);
             Controls.Add(btnVentas);
             Controls.Add(btnProduccion);
             Controls.Add(btnRecetas);

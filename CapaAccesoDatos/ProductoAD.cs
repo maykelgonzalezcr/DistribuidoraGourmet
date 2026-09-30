@@ -7,8 +7,8 @@ namespace CapaAccesoDatos
 {
     public class ProductoAD
     {
-        private Producto[] productos = new Producto[50];
-        private int contador = 0;
+        private static Producto[] productos = new Producto[50];
+        private static int contador = 0;
 
         public bool Agregar(Producto producto)
         {

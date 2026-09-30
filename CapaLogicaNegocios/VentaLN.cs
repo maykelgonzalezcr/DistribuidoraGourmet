@@ -5,22 +5,10 @@ namespace CapaLogicaNegocios
 {
     public class VentaLN
     {
-        private VentaAD ventaAD;
-        private ClienteAD clienteAD;
-        private CajeroAD cajeroAD;
-        private ProduccionAD produccionAD;
-
-        public VentaLN(
-            VentaAD ventaAD,
-            ClienteAD clienteAD,
-            CajeroAD cajeroAD,
-            ProduccionAD produccionAD)
-        {
-            this.ventaAD = ventaAD;
-            this.clienteAD = clienteAD;
-            this.cajeroAD = cajeroAD;
-            this.produccionAD = produccionAD;
-        }
+        private VentaAD ventaAD = new();
+        private ClienteAD clienteAD = new();
+        private CajeroAD cajeroAD = new();
+        private ProduccionAD produccionAD = new();
 
         public string? Registrar(
             int idVenta,

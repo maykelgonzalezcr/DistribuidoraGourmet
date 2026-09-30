@@ -8,12 +8,7 @@ namespace CapaLogicaNegocios
 {
     public class ClienteLN
     {
-        private ClienteAD clienteAD;
-
-        public ClienteLN(ClienteAD clienteAD)
-        {
-            this.clienteAD = clienteAD;
-        }
+        private ClienteAD clienteAD = new();
 
 
 

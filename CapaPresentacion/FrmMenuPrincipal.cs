@@ -1,25 +1,17 @@
-using CapaAccesoDatos;
 using CapaLogicaNegocios;
 namespace CapaPresentacion
 {
     public partial class FrmMenuPrincipal : Form
     {
-        private IngredienteAD _ingredienteAD;
         private IngredienteLN _ingredienteLN;
-        private ProductoAD _productoAD;
         private ProductoLN _productoLN;
-        private RecetaProductoAD _recetaProductoAD;
         private RecetaProductoLN _recetaProductoLN;
-        private ProduccionAD _produccionAD;
         private ProduccionLN _produccionLN;
 
-        private ClienteAD _clienteAD;
         private ClienteLN _clienteLN;
 
-        private CajeroAD _cajeroAD;
         private CajeroLN _cajeroLN;
 
-        private VentaAD _ventaAD;
         private VentaLN _ventaLN;
 
 
@@ -27,40 +19,16 @@ namespace CapaPresentacion
         {
             InitializeComponent();
 
-            _ingredienteAD = new IngredienteAD();
-            _ingredienteLN = new IngredienteLN(_ingredienteAD);
+            _ingredienteLN = new IngredienteLN();
+            _productoLN = new ProductoLN();
+            _recetaProductoLN = new RecetaProductoLN();
+            _produccionLN = new ProduccionLN();
 
-            _productoAD = new();
-            _productoLN = new(_productoAD);
+            _clienteLN = new ClienteLN();
 
-            _recetaProductoAD = new();
-            _recetaProductoLN = new(
-                _recetaProductoAD,
-                _productoAD,
-                _ingredienteAD
-            );
+            _cajeroLN = new CajeroLN();
 
-            _produccionAD = new();
-            _produccionLN = new(
-                _produccionAD,
-                _productoAD,
-                _recetaProductoAD,
-                _ingredienteAD
-            );
-
-            _clienteAD = new();
-            _clienteLN = new(_clienteAD);
-
-            _cajeroAD = new();
-            _cajeroLN = new(_cajeroAD);
-
-            _ventaAD = new();
-            _ventaLN = new(
-                _ventaAD,
-                _clienteAD,
-                _cajeroAD,
-                _produccionAD
-            );
+            _ventaLN = new VentaLN();
         }
         private void btnIngredientes_Click(object sender, EventArgs e)
         {

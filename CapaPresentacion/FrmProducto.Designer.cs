@@ -50,7 +50,7 @@
             // lblIdProducto
             // 
             lblIdProducto.AutoSize = true;
-            lblIdProducto.Location = new Point(63, 74);
+            lblIdProducto.Location = new Point(60, 31);
             lblIdProducto.Name = "lblIdProducto";
             lblIdProducto.Size = new Size(70, 15);
             lblIdProducto.TabIndex = 0;
@@ -59,7 +59,7 @@
             // lblNombreProducto
             // 
             lblNombreProducto.AutoSize = true;
-            lblNombreProducto.Location = new Point(63, 121);
+            lblNombreProducto.Location = new Point(60, 68);
             lblNombreProducto.Name = "lblNombreProducto";
             lblNombreProducto.Size = new Size(51, 15);
             lblNombreProducto.TabIndex = 1;
@@ -68,7 +68,7 @@
             // lblCategoria
             // 
             lblCategoria.AutoSize = true;
-            lblCategoria.Location = new Point(63, 168);
+            lblCategoria.Location = new Point(60, 105);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new Size(58, 15);
             lblCategoria.TabIndex = 2;
@@ -77,7 +77,7 @@
             // lblPrecioVenta
             // 
             lblPrecioVenta.AutoSize = true;
-            lblPrecioVenta.Location = new Point(63, 215);
+            lblPrecioVenta.Location = new Point(60, 142);
             lblPrecioVenta.Name = "lblPrecioVenta";
             lblPrecioVenta.Size = new Size(72, 15);
             lblPrecioVenta.TabIndex = 3;
@@ -86,7 +86,7 @@
             // lblActivo
             // 
             lblActivo.AutoSize = true;
-            lblActivo.Location = new Point(63, 262);
+            lblActivo.Location = new Point(60, 179);
             lblActivo.Name = "lblActivo";
             lblActivo.Size = new Size(41, 15);
             lblActivo.TabIndex = 4;
@@ -94,28 +94,28 @@
             // 
             // txtIdProducto
             // 
-            txtIdProducto.Location = new Point(206, 74);
+            txtIdProducto.Location = new Point(169, 31);
             txtIdProducto.Name = "txtIdProducto";
             txtIdProducto.Size = new Size(125, 23);
             txtIdProducto.TabIndex = 5;
             // 
             // txtNombreProducto
             // 
-            txtNombreProducto.Location = new Point(206, 121);
+            txtNombreProducto.Location = new Point(169, 68);
             txtNombreProducto.Name = "txtNombreProducto";
             txtNombreProducto.Size = new Size(125, 23);
             txtNombreProducto.TabIndex = 6;
             // 
             // txtCategoria
             // 
-            txtCategoria.Location = new Point(206, 168);
+            txtCategoria.Location = new Point(169, 105);
             txtCategoria.Name = "txtCategoria";
             txtCategoria.Size = new Size(125, 23);
             txtCategoria.TabIndex = 7;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(470, 111);
+            btnRegistrar.Location = new Point(445, 76);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(154, 25);
             btnRegistrar.TabIndex = 11;
@@ -125,7 +125,7 @@
             // 
             // nudPrecioVenta
             // 
-            nudPrecioVenta.Location = new Point(206, 215);
+            nudPrecioVenta.Location = new Point(169, 142);
             nudPrecioVenta.Name = "nudPrecioVenta";
             nudPrecioVenta.Size = new Size(125, 23);
             nudPrecioVenta.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(470, 158);
+            btnActualizar.Location = new Point(445, 121);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(154, 25);
             btnActualizar.TabIndex = 14;
@@ -143,7 +143,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(470, 205);
+            btnLimpiar.Location = new Point(445, 166);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(154, 25);
             btnLimpiar.TabIndex = 15;
@@ -155,18 +155,18 @@
             // 
             dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProductos.Location = new Point(48, 321);
+            dgvProductos.Location = new Point(39, 245);
             dgvProductos.MultiSelect = false;
             dgvProductos.Name = "dgvProductos";
             dgvProductos.ReadOnly = true;
             dgvProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvProductos.Size = new Size(715, 103);
+            dgvProductos.Size = new Size(700, 200);
             dgvProductos.TabIndex = 16;
             dgvProductos.CellClick += dgvProductos_CellClick;
             // 
             // btnBuscarPorID
             // 
-            btnBuscarPorID.Location = new Point(470, 66);
+            btnBuscarPorID.Location = new Point(445, 31);
             btnBuscarPorID.Name = "btnBuscarPorID";
             btnBuscarPorID.Size = new Size(154, 25);
             btnBuscarPorID.TabIndex = 10;
@@ -177,7 +177,7 @@
             // chkActivo
             // 
             chkActivo.AutoSize = true;
-            chkActivo.Location = new Point(206, 260);
+            chkActivo.Location = new Point(169, 179);
             chkActivo.Name = "chkActivo";
             chkActivo.Size = new Size(15, 14);
             chkActivo.TabIndex = 17;
@@ -187,7 +187,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(784, 486);
             Controls.Add(chkActivo);
             Controls.Add(btnBuscarPorID);
             Controls.Add(dgvProductos);

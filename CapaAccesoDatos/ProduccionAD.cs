@@ -7,8 +7,8 @@ namespace CapaAccesoDatos
 {
     public class ProduccionAD
     {
-        private Produccion[] producciones = new Produccion[200];
-        private int contador = 0;
+        private static Produccion[] producciones = new Produccion[200];
+        private static int contador = 0;
 
         public bool Agregar(Produccion produccion)
         {

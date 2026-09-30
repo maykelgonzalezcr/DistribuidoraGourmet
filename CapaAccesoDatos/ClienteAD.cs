@@ -7,8 +7,8 @@ namespace CapaAccesoDatos
 {
     public class ClienteAD
     {
-        private Cliente[] clientes = new Cliente[50];
-        private int contador = 0;
+        private static Cliente[] clientes = new Cliente[50];
+        private static int contador = 0;
 
         public bool Agregar(Cliente cliente)
         {

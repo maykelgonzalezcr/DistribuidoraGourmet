@@ -47,72 +47,72 @@ namespace CapaPresentacion
             // lblIdProduccion
             // 
             lblIdProduccion.AutoSize = true;
-            lblIdProduccion.Location = new Point(63, 74);
+            lblIdProduccion.Location = new Point(57, 38);
             lblIdProduccion.Name = "lblIdProduccion";
-            lblIdProduccion.Size = new Size(87, 15);
+            lblIdProduccion.Size = new Size(82, 15);
             lblIdProduccion.TabIndex = 0;
             lblIdProduccion.Text = "ID Producción";
             // 
             // lblProducto
             // 
             lblProducto.AutoSize = true;
-            lblProducto.Location = new Point(63, 111);
+            lblProducto.Location = new Point(57, 75);
             lblProducto.Name = "lblProducto";
-            lblProducto.Size = new Size(54, 15);
+            lblProducto.Size = new Size(56, 15);
             lblProducto.TabIndex = 1;
             lblProducto.Text = "Producto";
             // 
             // lblCantidadProducida
             // 
             lblCantidadProducida.AutoSize = true;
-            lblCantidadProducida.Location = new Point(63, 148);
+            lblCantidadProducida.Location = new Point(57, 112);
             lblCantidadProducida.Name = "lblCantidadProducida";
-            lblCantidadProducida.Size = new Size(116, 15);
+            lblCantidadProducida.Size = new Size(112, 15);
             lblCantidadProducida.TabIndex = 2;
             lblCantidadProducida.Text = "Cantidad Producida";
             // 
             // lblFechaProduccion
             // 
             lblFechaProduccion.AutoSize = true;
-            lblFechaProduccion.Location = new Point(63, 185);
+            lblFechaProduccion.Location = new Point(57, 149);
             lblFechaProduccion.Name = "lblFechaProduccion";
-            lblFechaProduccion.Size = new Size(113, 15);
+            lblFechaProduccion.Size = new Size(102, 15);
             lblFechaProduccion.TabIndex = 3;
             lblFechaProduccion.Text = "Fecha Producción";
             // 
             // txtIdProduccion
             // 
-            txtIdProduccion.Location = new Point(206, 74);
+            txtIdProduccion.Location = new Point(200, 38);
             txtIdProduccion.Name = "txtIdProduccion";
-            txtIdProduccion.Size = new Size(125, 23);
+            txtIdProduccion.Size = new Size(200, 23);
             txtIdProduccion.TabIndex = 4;
             // 
             // cmbProducto
             // 
             cmbProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbProducto.FormattingEnabled = true;
-            cmbProducto.Location = new Point(206, 108);
+            cmbProducto.Location = new Point(200, 72);
             cmbProducto.Name = "cmbProducto";
             cmbProducto.Size = new Size(200, 23);
             cmbProducto.TabIndex = 5;
             // 
             // nudCantidadProducida
             // 
-            nudCantidadProducida.Location = new Point(206, 145);
+            nudCantidadProducida.Location = new Point(200, 109);
             nudCantidadProducida.Name = "nudCantidadProducida";
-            nudCantidadProducida.Size = new Size(125, 23);
+            nudCantidadProducida.Size = new Size(200, 23);
             nudCantidadProducida.TabIndex = 6;
             // 
             // dtpFechaProduccion
             // 
-            dtpFechaProduccion.Location = new Point(206, 182);
+            dtpFechaProduccion.Location = new Point(200, 146);
             dtpFechaProduccion.Name = "dtpFechaProduccion";
             dtpFechaProduccion.Size = new Size(200, 23);
             dtpFechaProduccion.TabIndex = 7;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(470, 111);
+            btnRegistrar.Location = new Point(494, 83);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(154, 25);
             btnRegistrar.TabIndex = 8;
@@ -122,7 +122,7 @@ namespace CapaPresentacion
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(470, 158);
+            btnLimpiar.Location = new Point(494, 130);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(154, 25);
             btnLimpiar.TabIndex = 9;
@@ -134,18 +134,18 @@ namespace CapaPresentacion
             // 
             dgvProducciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProducciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProducciones.Location = new Point(48, 321);
+            dgvProducciones.Location = new Point(40, 227);
             dgvProducciones.MultiSelect = false;
             dgvProducciones.Name = "dgvProducciones";
             dgvProducciones.ReadOnly = true;
             dgvProducciones.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvProducciones.Size = new Size(715, 103);
+            dgvProducciones.Size = new Size(700, 200);
             dgvProducciones.TabIndex = 10;
             dgvProducciones.CellClick += dgvProducciones_CellClick;
             // 
             // btnBuscarPorID
             // 
-            btnBuscarPorID.Location = new Point(470, 66);
+            btnBuscarPorID.Location = new Point(494, 38);
             btnBuscarPorID.Name = "btnBuscarPorID";
             btnBuscarPorID.Size = new Size(154, 25);
             btnBuscarPorID.TabIndex = 11;
@@ -157,7 +157,7 @@ namespace CapaPresentacion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 475);
+            ClientSize = new Size(784, 486);
             Controls.Add(btnBuscarPorID);
             Controls.Add(dgvProducciones);
             Controls.Add(btnLimpiar);

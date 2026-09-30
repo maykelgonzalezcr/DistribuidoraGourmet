@@ -8,22 +8,10 @@ namespace CapaLogicaNegocios
 {
     public class ProduccionLN
     {
-        private ProduccionAD produccionAD;
-        private ProductoAD productoAD;
-        private RecetaProductoAD recetaProductoAD;
-        private IngredienteAD ingredienteAD;
-
-        public ProduccionLN(
-            ProduccionAD produccionAD,
-            ProductoAD productoAD,
-            RecetaProductoAD recetaProductoAD,
-            IngredienteAD ingredienteAD)
-        {
-            this.produccionAD = produccionAD;
-            this.productoAD = productoAD;
-            this.recetaProductoAD = recetaProductoAD;
-            this.ingredienteAD = ingredienteAD;
-        }
+        private ProduccionAD produccionAD = new();
+        private ProductoAD productoAD = new();
+        private RecetaProductoAD recetaProductoAD = new();
+        private IngredienteAD ingredienteAD = new();
 
         public string? Registrar(
             int idProduccion,

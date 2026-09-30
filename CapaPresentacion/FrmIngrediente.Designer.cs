@@ -51,7 +51,7 @@
             // lblIdIngrediente
             // 
             lblIdIngrediente.AutoSize = true;
-            lblIdIngrediente.Location = new Point(63, 74);
+            lblIdIngrediente.Location = new Point(47, 35);
             lblIdIngrediente.Name = "lblIdIngrediente";
             lblIdIngrediente.Size = new Size(81, 15);
             lblIdIngrediente.TabIndex = 0;
@@ -60,7 +60,7 @@
             // lblNombreIngrediente
             // 
             lblNombreIngrediente.AutoSize = true;
-            lblNombreIngrediente.Location = new Point(63, 121);
+            lblNombreIngrediente.Location = new Point(47, 72);
             lblNombreIngrediente.Name = "lblNombreIngrediente";
             lblNombreIngrediente.Size = new Size(51, 15);
             lblNombreIngrediente.TabIndex = 1;
@@ -69,7 +69,7 @@
             // lblUnidadMedida
             // 
             lblUnidadMedida.AutoSize = true;
-            lblUnidadMedida.Location = new Point(63, 168);
+            lblUnidadMedida.Location = new Point(47, 109);
             lblUnidadMedida.Name = "lblUnidadMedida";
             lblUnidadMedida.Size = new Size(104, 15);
             lblUnidadMedida.TabIndex = 2;
@@ -78,7 +78,7 @@
             // lblExistenciaActual
             // 
             lblExistenciaActual.AutoSize = true;
-            lblExistenciaActual.Location = new Point(63, 215);
+            lblExistenciaActual.Location = new Point(47, 146);
             lblExistenciaActual.Name = "lblExistenciaActual";
             lblExistenciaActual.Size = new Size(93, 15);
             lblExistenciaActual.TabIndex = 3;
@@ -87,7 +87,7 @@
             // lblCostoUnitario
             // 
             lblCostoUnitario.AutoSize = true;
-            lblCostoUnitario.Location = new Point(63, 262);
+            lblCostoUnitario.Location = new Point(47, 183);
             lblCostoUnitario.Name = "lblCostoUnitario";
             lblCostoUnitario.Size = new Size(82, 15);
             lblCostoUnitario.TabIndex = 4;
@@ -95,30 +95,30 @@
             // 
             // txtIdIngrediente
             // 
-            txtIdIngrediente.Location = new Point(206, 74);
+            txtIdIngrediente.Location = new Point(164, 35);
             txtIdIngrediente.Name = "txtIdIngrediente";
-            txtIdIngrediente.Size = new Size(125, 23);
+            txtIdIngrediente.Size = new Size(200, 23);
             txtIdIngrediente.TabIndex = 5;
             // 
             // txtNombreIngrediente
             // 
-            txtNombreIngrediente.Location = new Point(206, 121);
+            txtNombreIngrediente.Location = new Point(164, 70);
             txtNombreIngrediente.Name = "txtNombreIngrediente";
-            txtNombreIngrediente.Size = new Size(125, 23);
+            txtNombreIngrediente.Size = new Size(200, 23);
             txtNombreIngrediente.TabIndex = 6;
             // 
             // txtUnidadMedida
             // 
-            txtUnidadMedida.Location = new Point(206, 168);
+            txtUnidadMedida.Location = new Point(164, 105);
             txtUnidadMedida.Name = "txtUnidadMedida";
-            txtUnidadMedida.Size = new Size(125, 23);
+            txtUnidadMedida.Size = new Size(200, 23);
             txtUnidadMedida.TabIndex = 7;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(470, 111);
+            btnRegistrar.Location = new Point(470, 81);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(154, 25);
+            btnRegistrar.Size = new Size(150, 25);
             btnRegistrar.TabIndex = 11;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
@@ -126,24 +126,24 @@
             // 
             // nudExistenciaActual
             // 
-            nudExistenciaActual.Location = new Point(206, 215);
+            nudExistenciaActual.Location = new Point(164, 140);
             nudExistenciaActual.Name = "nudExistenciaActual";
-            nudExistenciaActual.Size = new Size(125, 23);
+            nudExistenciaActual.Size = new Size(200, 23);
             nudExistenciaActual.TabIndex = 8;
             nudExistenciaActual.Enter += nudExistenciaActual_Enter;
             // 
             // nudCostoUnitario
             // 
-            nudCostoUnitario.Location = new Point(206, 262);
+            nudCostoUnitario.Location = new Point(164, 175);
             nudCostoUnitario.Name = "nudCostoUnitario";
-            nudCostoUnitario.Size = new Size(125, 23);
+            nudCostoUnitario.Size = new Size(200, 23);
             nudCostoUnitario.TabIndex = 9;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(470, 158);
+            btnActualizar.Location = new Point(470, 127);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(154, 25);
+            btnActualizar.Size = new Size(150, 25);
             btnActualizar.TabIndex = 14;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -151,9 +151,9 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(470, 205);
+            btnLimpiar.Location = new Point(470, 173);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(154, 25);
+            btnLimpiar.Size = new Size(150, 25);
             btnLimpiar.TabIndex = 15;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -163,20 +163,20 @@
             // 
             dgvIngredientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvIngredientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvIngredientes.Location = new Point(48, 321);
+            dgvIngredientes.Location = new Point(47, 242);
             dgvIngredientes.MultiSelect = false;
             dgvIngredientes.Name = "dgvIngredientes";
             dgvIngredientes.ReadOnly = true;
             dgvIngredientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvIngredientes.Size = new Size(715, 103);
+            dgvIngredientes.Size = new Size(700, 200);
             dgvIngredientes.TabIndex = 16;
             dgvIngredientes.CellClick += dgvIngredientes_CellClick;
             // 
             // btnBuscarPorID
             // 
-            btnBuscarPorID.Location = new Point(470, 66);
+            btnBuscarPorID.Location = new Point(470, 35);
             btnBuscarPorID.Name = "btnBuscarPorID";
-            btnBuscarPorID.Size = new Size(154, 25);
+            btnBuscarPorID.Size = new Size(150, 25);
             btnBuscarPorID.TabIndex = 10;
             btnBuscarPorID.Text = "Buscar por ID";
             btnBuscarPorID.UseVisualStyleBackColor = true;
@@ -186,7 +186,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(784, 486);
             Controls.Add(btnBuscarPorID);
             Controls.Add(dgvIngredientes);
             Controls.Add(btnLimpiar);

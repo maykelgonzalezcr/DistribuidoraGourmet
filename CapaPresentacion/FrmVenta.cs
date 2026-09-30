@@ -209,6 +209,33 @@ namespace CapaPresentacion
             LimpiarCampos();
         }
 
+        // Event handler stubs wired by the Designer. Kept minimal to avoid
+        // changing UI behavior while resolving Designer/compile errors.
+        private void txtIdVenta_TextChanged(object sender, EventArgs e)
+        {
+            // Intentionally left blank (Designer wiring requires this method).
+        }
+
+        private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Intentionally left blank.
+        }
+
+        private void cmbCajero_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Intentionally left blank.
+        }
+
+        private void cmbProduccion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Intentionally left blank.
+        }
+
+        private void nudCantidad_ValueChanged(object sender, EventArgs e)
+        {
+            // Intentionally left blank.
+        }
+
         private void btnBuscarPorID_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtIdVenta.Text, out int id))
@@ -280,6 +307,11 @@ namespace CapaPresentacion
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+        }
+
+        private void FrmVenta_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

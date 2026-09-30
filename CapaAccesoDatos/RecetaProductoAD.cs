@@ -7,8 +7,8 @@ namespace CapaAccesoDatos
 {
     public class RecetaProductoAD
     {
-        private RecetaProducto[] recetas = new RecetaProducto[200];
-        private int contador = 0;
+        private static RecetaProducto[] recetas = new RecetaProducto[200];
+        private static int contador = 0;
 
         public bool Agregar(RecetaProducto receta)
         {

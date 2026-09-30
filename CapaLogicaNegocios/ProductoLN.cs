@@ -8,12 +8,7 @@ namespace CapaLogicaNegocios
 {
     public class ProductoLN
     {
-        private ProductoAD productoAD;
-
-        public ProductoLN(ProductoAD productoAD)
-        {
-            this.productoAD = productoAD;
-        }
+        private ProductoAD productoAD = new();
 
         private string? ValidarDatos(Producto producto)
         {

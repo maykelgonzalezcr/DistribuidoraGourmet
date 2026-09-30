@@ -53,25 +53,25 @@ namespace CapaPresentacion
             // lblIdCliente
             // 
             lblIdCliente.AutoSize = true;
-            lblIdCliente.Location = new Point(63, 74);
+            lblIdCliente.Location = new Point(44, 20);
             lblIdCliente.Name = "lblIdCliente";
-            lblIdCliente.Size = new Size(61, 15);
+            lblIdCliente.Size = new Size(58, 15);
             lblIdCliente.TabIndex = 0;
             lblIdCliente.Text = "ID Cliente";
             // 
             // lblIdentificacion
             // 
             lblIdentificacion.AutoSize = true;
-            lblIdentificacion.Location = new Point(63, 111);
+            lblIdentificacion.Location = new Point(44, 53);
             lblIdentificacion.Name = "lblIdentificacion";
-            lblIdentificacion.Size = new Size(80, 15);
+            lblIdentificacion.Size = new Size(79, 15);
             lblIdentificacion.TabIndex = 1;
             lblIdentificacion.Text = "Identificación";
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(63, 148);
+            lblNombre.Location = new Point(44, 86);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(51, 15);
             lblNombre.TabIndex = 2;
@@ -80,7 +80,7 @@ namespace CapaPresentacion
             // lblApellido
             // 
             lblApellido.AutoSize = true;
-            lblApellido.Location = new Point(63, 185);
+            lblApellido.Location = new Point(44, 119);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(51, 15);
             lblApellido.TabIndex = 3;
@@ -89,25 +89,25 @@ namespace CapaPresentacion
             // lblFechaNacimiento
             // 
             lblFechaNacimiento.AutoSize = true;
-            lblFechaNacimiento.Location = new Point(63, 222);
+            lblFechaNacimiento.Location = new Point(44, 152);
             lblFechaNacimiento.Name = "lblFechaNacimiento";
-            lblFechaNacimiento.Size = new Size(106, 15);
+            lblFechaNacimiento.Size = new Size(103, 15);
             lblFechaNacimiento.TabIndex = 4;
             lblFechaNacimiento.Text = "Fecha Nacimiento";
             // 
             // lblFechaRegistro
             // 
             lblFechaRegistro.AutoSize = true;
-            lblFechaRegistro.Location = new Point(63, 259);
+            lblFechaRegistro.Location = new Point(44, 185);
             lblFechaRegistro.Name = "lblFechaRegistro";
-            lblFechaRegistro.Size = new Size(95, 15);
+            lblFechaRegistro.Size = new Size(84, 15);
             lblFechaRegistro.TabIndex = 5;
             lblFechaRegistro.Text = "Fecha Registro";
             // 
             // lblActivo
             // 
             lblActivo.AutoSize = true;
-            lblActivo.Location = new Point(63, 296);
+            lblActivo.Location = new Point(44, 218);
             lblActivo.Name = "lblActivo";
             lblActivo.Size = new Size(41, 15);
             lblActivo.TabIndex = 6;
@@ -115,42 +115,42 @@ namespace CapaPresentacion
             // 
             // txtIdCliente
             // 
-            txtIdCliente.Location = new Point(206, 74);
+            txtIdCliente.Location = new Point(171, 20);
             txtIdCliente.Name = "txtIdCliente";
-            txtIdCliente.Size = new Size(125, 23);
+            txtIdCliente.Size = new Size(200, 23);
             txtIdCliente.TabIndex = 7;
             // 
             // txtIdentificacion
             // 
-            txtIdentificacion.Location = new Point(206, 108);
+            txtIdentificacion.Location = new Point(171, 53);
             txtIdentificacion.Name = "txtIdentificacion";
-            txtIdentificacion.Size = new Size(125, 23);
+            txtIdentificacion.Size = new Size(200, 23);
             txtIdentificacion.TabIndex = 8;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(206, 145);
+            txtNombre.Location = new Point(171, 86);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(125, 23);
+            txtNombre.Size = new Size(200, 23);
             txtNombre.TabIndex = 9;
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(206, 182);
+            txtApellido.Location = new Point(171, 119);
             txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(125, 23);
+            txtApellido.Size = new Size(200, 23);
             txtApellido.TabIndex = 10;
             // 
             // dtpFechaNacimiento
             // 
-            dtpFechaNacimiento.Location = new Point(206, 219);
+            dtpFechaNacimiento.Location = new Point(171, 152);
             dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             dtpFechaNacimiento.Size = new Size(200, 23);
             dtpFechaNacimiento.TabIndex = 11;
             // 
             // dtpFechaRegistro
             // 
-            dtpFechaRegistro.Location = new Point(206, 256);
+            dtpFechaRegistro.Location = new Point(171, 185);
             dtpFechaRegistro.Name = "dtpFechaRegistro";
             dtpFechaRegistro.Size = new Size(200, 23);
             dtpFechaRegistro.TabIndex = 12;
@@ -158,7 +158,7 @@ namespace CapaPresentacion
             // chkActivo
             // 
             chkActivo.AutoSize = true;
-            chkActivo.Location = new Point(206, 296);
+            chkActivo.Location = new Point(171, 218);
             chkActivo.Name = "chkActivo";
             chkActivo.Size = new Size(15, 14);
             chkActivo.TabIndex = 13;
@@ -166,9 +166,9 @@ namespace CapaPresentacion
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(470, 111);
+            btnRegistrar.Location = new Point(475, 70);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(154, 25);
+            btnRegistrar.Size = new Size(150, 25);
             btnRegistrar.TabIndex = 14;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
@@ -176,9 +176,9 @@ namespace CapaPresentacion
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(470, 158);
+            btnActualizar.Location = new Point(475, 120);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(154, 25);
+            btnActualizar.Size = new Size(150, 25);
             btnActualizar.TabIndex = 15;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -186,9 +186,9 @@ namespace CapaPresentacion
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(470, 205);
+            btnLimpiar.Location = new Point(475, 170);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(154, 25);
+            btnLimpiar.Size = new Size(150, 25);
             btnLimpiar.TabIndex = 16;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -198,20 +198,20 @@ namespace CapaPresentacion
             // 
             dgvClientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Location = new Point(48, 340);
+            dgvClientes.Location = new Point(44, 261);
             dgvClientes.MultiSelect = false;
             dgvClientes.Name = "dgvClientes";
             dgvClientes.ReadOnly = true;
             dgvClientes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvClientes.Size = new Size(715, 103);
+            dgvClientes.Size = new Size(700, 200);
             dgvClientes.TabIndex = 17;
             dgvClientes.CellClick += dgvClientes_CellClick;
             // 
             // btnBuscarPorID
             // 
-            btnBuscarPorID.Location = new Point(470, 66);
+            btnBuscarPorID.Location = new Point(475, 20);
             btnBuscarPorID.Name = "btnBuscarPorID";
-            btnBuscarPorID.Size = new Size(154, 25);
+            btnBuscarPorID.Size = new Size(150, 25);
             btnBuscarPorID.TabIndex = 18;
             btnBuscarPorID.Text = "Buscar por ID";
             btnBuscarPorID.UseVisualStyleBackColor = true;
@@ -221,7 +221,7 @@ namespace CapaPresentacion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 475);
+            ClientSize = new Size(784, 486);
             Controls.Add(btnBuscarPorID);
             Controls.Add(dgvClientes);
             Controls.Add(btnLimpiar);

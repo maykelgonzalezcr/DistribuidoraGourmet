@@ -4,8 +4,8 @@ namespace CapaAccesoDatos
 {
     public class VentaAD
     {
-        private Venta[] ventas = new Venta[200];
-        private int contador = 0;
+        private static Venta[] ventas = new Venta[200];
+        private static int contador = 0;
 
         public bool Agregar(Venta venta)
         {

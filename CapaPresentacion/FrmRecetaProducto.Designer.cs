@@ -47,51 +47,51 @@ namespace CapaPresentacion
             // lblIdRecetaProducto
             // 
             lblIdRecetaProducto.AutoSize = true;
-            lblIdRecetaProducto.Location = new Point(63, 74);
+            lblIdRecetaProducto.Location = new Point(62, 37);
             lblIdRecetaProducto.Name = "lblIdRecetaProducto";
-            lblIdRecetaProducto.Size = new Size(99, 15);
+            lblIdRecetaProducto.Size = new Size(108, 15);
             lblIdRecetaProducto.TabIndex = 0;
             lblIdRecetaProducto.Text = "ID Receta Producto";
             // 
             // lblProducto
             // 
             lblProducto.AutoSize = true;
-            lblProducto.Location = new Point(63, 111);
+            lblProducto.Location = new Point(62, 74);
             lblProducto.Name = "lblProducto";
-            lblProducto.Size = new Size(54, 15);
+            lblProducto.Size = new Size(56, 15);
             lblProducto.TabIndex = 1;
             lblProducto.Text = "Producto";
             // 
             // lblIngrediente
             // 
             lblIngrediente.AutoSize = true;
-            lblIngrediente.Location = new Point(63, 148);
+            lblIngrediente.Location = new Point(62, 111);
             lblIngrediente.Name = "lblIngrediente";
-            lblIngrediente.Size = new Size(69, 15);
+            lblIngrediente.Size = new Size(67, 15);
             lblIngrediente.TabIndex = 2;
             lblIngrediente.Text = "Ingrediente";
             // 
             // lblCantidadRequerida
             // 
             lblCantidadRequerida.AutoSize = true;
-            lblCantidadRequerida.Location = new Point(63, 185);
+            lblCantidadRequerida.Location = new Point(62, 148);
             lblCantidadRequerida.Name = "lblCantidadRequerida";
-            lblCantidadRequerida.Size = new Size(115, 15);
+            lblCantidadRequerida.Size = new Size(111, 15);
             lblCantidadRequerida.TabIndex = 3;
             lblCantidadRequerida.Text = "Cantidad Requerida";
             // 
             // txtIdRecetaProducto
             // 
-            txtIdRecetaProducto.Location = new Point(206, 74);
+            txtIdRecetaProducto.Location = new Point(205, 37);
             txtIdRecetaProducto.Name = "txtIdRecetaProducto";
-            txtIdRecetaProducto.Size = new Size(125, 23);
+            txtIdRecetaProducto.Size = new Size(200, 23);
             txtIdRecetaProducto.TabIndex = 4;
             // 
             // cmbProducto
             // 
             cmbProducto.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbProducto.FormattingEnabled = true;
-            cmbProducto.Location = new Point(206, 108);
+            cmbProducto.Location = new Point(205, 71);
             cmbProducto.Name = "cmbProducto";
             cmbProducto.Size = new Size(200, 23);
             cmbProducto.TabIndex = 5;
@@ -100,21 +100,21 @@ namespace CapaPresentacion
             // 
             cmbIngrediente.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbIngrediente.FormattingEnabled = true;
-            cmbIngrediente.Location = new Point(206, 145);
+            cmbIngrediente.Location = new Point(205, 108);
             cmbIngrediente.Name = "cmbIngrediente";
             cmbIngrediente.Size = new Size(200, 23);
             cmbIngrediente.TabIndex = 6;
             // 
             // nudCantidadRequerida
             // 
-            nudCantidadRequerida.Location = new Point(206, 182);
+            nudCantidadRequerida.Location = new Point(205, 145);
             nudCantidadRequerida.Name = "nudCantidadRequerida";
-            nudCantidadRequerida.Size = new Size(125, 23);
+            nudCantidadRequerida.Size = new Size(200, 23);
             nudCantidadRequerida.TabIndex = 7;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(470, 111);
+            btnRegistrar.Location = new Point(526, 82);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(154, 25);
             btnRegistrar.TabIndex = 8;
@@ -124,7 +124,7 @@ namespace CapaPresentacion
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(470, 158);
+            btnLimpiar.Location = new Point(526, 129);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(154, 25);
             btnLimpiar.TabIndex = 9;
@@ -136,18 +136,18 @@ namespace CapaPresentacion
             // 
             dgvRecetas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvRecetas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRecetas.Location = new Point(48, 321);
+            dgvRecetas.Location = new Point(44, 215);
             dgvRecetas.MultiSelect = false;
             dgvRecetas.Name = "dgvRecetas";
             dgvRecetas.ReadOnly = true;
             dgvRecetas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRecetas.Size = new Size(715, 103);
+            dgvRecetas.Size = new Size(700, 200);
             dgvRecetas.TabIndex = 10;
             dgvRecetas.CellClick += dgvRecetas_CellClick;
             // 
             // btnBuscarPorID
             // 
-            btnBuscarPorID.Location = new Point(470, 66);
+            btnBuscarPorID.Location = new Point(526, 37);
             btnBuscarPorID.Name = "btnBuscarPorID";
             btnBuscarPorID.Size = new Size(154, 25);
             btnBuscarPorID.TabIndex = 11;
@@ -159,7 +159,7 @@ namespace CapaPresentacion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 475);
+            ClientSize = new Size(784, 486);
             Controls.Add(btnBuscarPorID);
             Controls.Add(dgvRecetas);
             Controls.Add(btnLimpiar);
