@@ -57,7 +57,7 @@ namespace CapaLogicaNegocios
 
             decimal costoProduccion = 0;
 
-            // Primero validar TODOS los ingredientes
+            // Primero validar TODOS los ingredientes y calcular el costo total
             for (int i = 0; i < recetas.Length; i++)
             {
                 RecetaProducto receta = recetas[i];
@@ -69,23 +69,13 @@ namespace CapaLogicaNegocios
                 {
                     return $"No hay suficiente existencia de {receta.Ingrediente.NombreIngrediente}.";
                 }
-            }
-
-            // Solo después de validar todos, descontar y calcular
-            for (int i = 0; i < recetas.Length; i++)
-            {
-                RecetaProducto receta = recetas[i];
-
-                decimal cantidadNecesaria =
-                    receta.CantidadRequerida * cantidadProducida;
-
-                receta.Ingrediente.ExistenciaActual -= cantidadNecesaria;
 
                 costoProduccion +=
                     cantidadNecesaria *
                     receta.Ingrediente.CostoUnitario;
             }
 
+            // Crear la producción pero no modificar inventario todavía
             Produccion produccion = new(
                 idProduccion,
                 producto,
@@ -94,9 +84,22 @@ namespace CapaLogicaNegocios
                 costoProduccion
             );
 
+            // Intentar agregar la producción al almacenamiento. Solo si se
+            // agrega correctamente procedemos a deducir los ingredientes.
             if (!produccionAD.Agregar(produccion))
             {
                 return "No hay espacio para registrar más producciones.";
+            }
+
+            // Ahora que la producción fue registrada, descontar los ingredientes
+            for (int i = 0; i < recetas.Length; i++)
+            {
+                RecetaProducto receta = recetas[i];
+
+                decimal cantidadNecesaria =
+                    receta.CantidadRequerida * cantidadProducida;
+
+                receta.Ingrediente.ExistenciaActual -= cantidadNecesaria;
             }
 
             return null;
