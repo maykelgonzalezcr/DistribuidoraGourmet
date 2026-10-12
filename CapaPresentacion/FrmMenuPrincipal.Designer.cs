@@ -35,13 +35,15 @@
             btnRecetas = new Button();
             btnProduccion = new Button();
             btnVentas = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnIngredientes
             // 
-            btnIngredientes.Location = new Point(53, 35);
+            btnIngredientes.Location = new Point(25, 21);
             btnIngredientes.Name = "btnIngredientes";
-            btnIngredientes.Size = new Size(144, 31);
+            btnIngredientes.Size = new Size(160, 40);
             btnIngredientes.TabIndex = 0;
             btnIngredientes.Text = "Ingredientes";
             btnIngredientes.UseVisualStyleBackColor = true;
@@ -49,9 +51,9 @@
             // 
             // btnProductos
             // 
-            btnProductos.Location = new Point(53, 82);
+            btnProductos.Location = new Point(25, 76);
             btnProductos.Name = "btnProductos";
-            btnProductos.Size = new Size(144, 31);
+            btnProductos.Size = new Size(160, 40);
             btnProductos.TabIndex = 1;
             btnProductos.Text = "Productos";
             btnProductos.UseVisualStyleBackColor = true;
@@ -59,9 +61,9 @@
             // 
             // btnClientes
             // 
-            btnClientes.Location = new Point(53, 129);
+            btnClientes.Location = new Point(25, 131);
             btnClientes.Name = "btnClientes";
-            btnClientes.Size = new Size(144, 31);
+            btnClientes.Size = new Size(160, 40);
             btnClientes.TabIndex = 2;
             btnClientes.Text = "Clientes";
             btnClientes.UseVisualStyleBackColor = true;
@@ -69,9 +71,9 @@
             // 
             // btnCajeros
             // 
-            btnCajeros.Location = new Point(53, 176);
+            btnCajeros.Location = new Point(25, 186);
             btnCajeros.Name = "btnCajeros";
-            btnCajeros.Size = new Size(144, 31);
+            btnCajeros.Size = new Size(160, 40);
             btnCajeros.TabIndex = 3;
             btnCajeros.Text = "Cajeros";
             btnCajeros.UseVisualStyleBackColor = true;
@@ -79,9 +81,9 @@
             // 
             // btnRecetas
             // 
-            btnRecetas.Location = new Point(53, 223);
+            btnRecetas.Location = new Point(25, 241);
             btnRecetas.Name = "btnRecetas";
-            btnRecetas.Size = new Size(144, 31);
+            btnRecetas.Size = new Size(160, 40);
             btnRecetas.TabIndex = 4;
             btnRecetas.Text = "Recetas";
             btnRecetas.UseVisualStyleBackColor = true;
@@ -89,9 +91,9 @@
             // 
             // btnProduccion
             // 
-            btnProduccion.Location = new Point(53, 270);
+            btnProduccion.Location = new Point(25, 296);
             btnProduccion.Name = "btnProduccion";
-            btnProduccion.Size = new Size(144, 31);
+            btnProduccion.Size = new Size(160, 40);
             btnProduccion.TabIndex = 5;
             btnProduccion.Text = "Producción";
             btnProduccion.UseVisualStyleBackColor = true;
@@ -99,19 +101,30 @@
             // 
             // btnVentas
             // 
-            btnVentas.Location = new Point(53, 317);
+            btnVentas.Location = new Point(25, 351);
             btnVentas.Name = "btnVentas";
-            btnVentas.Size = new Size(144, 31);
+            btnVentas.Size = new Size(160, 40);
             btnVentas.TabIndex = 6;
             btnVentas.Text = "Ventas";
             btnVentas.UseVisualStyleBackColor = true;
             btnVentas.Click += btnVentas_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.DistGourmetLogo;
+            pictureBox1.Location = new Point(205, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(555, 371);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // FrmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(654, 388);
+            ClientSize = new Size(784, 411);
+            Controls.Add(pictureBox1);
             Controls.Add(btnVentas);
             Controls.Add(btnProduccion);
             Controls.Add(btnRecetas);
@@ -119,8 +132,11 @@
             Controls.Add(btnClientes);
             Controls.Add(btnProductos);
             Controls.Add(btnIngredientes);
+            MaximumSize = new Size(800, 450);
+            MinimumSize = new Size(800, 450);
             Name = "FrmMenuPrincipal";
             Text = "Menu Principal";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -133,5 +149,6 @@
         private Button btnRecetas;
         private Button btnProduccion;
         private Button btnVentas;
+        private PictureBox pictureBox1;
     }
 }

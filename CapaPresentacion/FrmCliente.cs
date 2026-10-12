@@ -21,6 +21,7 @@ namespace CapaPresentacion
             _clienteLN = clienteLN;
             chkActivo.Checked = true;
             CargarClientes();
+            this.MinimumSize = new System.Drawing.Size(800, 600);
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -57,7 +58,54 @@ namespace CapaPresentacion
 
         private void CargarClientes()
         {
+            dgvClientes.AutoGenerateColumns = false;
             dgvClientes.DataSource = _clienteLN.Listar();
+
+            if (dgvClientes.Columns.Count == 0)
+            {
+                dgvClientes.Columns.Clear();
+
+                var colId = new DataGridViewTextBoxColumn();
+                colId.DataPropertyName = "IdCliente";
+                colId.HeaderText = "ID";
+                colId.MinimumWidth = 60;
+                dgvClientes.Columns.Add(colId);
+
+                var colIdent = new DataGridViewTextBoxColumn();
+                colIdent.DataPropertyName = "Identificacion";
+                colIdent.HeaderText = "Identificacion";
+                colIdent.MinimumWidth = 120;
+                dgvClientes.Columns.Add(colIdent);
+
+                var colNombre = new DataGridViewTextBoxColumn();
+                colNombre.DataPropertyName = "Nombre";
+                colNombre.HeaderText = "Nombre";
+                colNombre.MinimumWidth = 150;
+                dgvClientes.Columns.Add(colNombre);
+
+                var colApellido = new DataGridViewTextBoxColumn();
+                colApellido.DataPropertyName = "Apellido";
+                colApellido.HeaderText = "Apellido";
+                colApellido.MinimumWidth = 150;
+                dgvClientes.Columns.Add(colApellido);
+
+                var colEstado = new DataGridViewTextBoxColumn();
+                colEstado.HeaderText = "Estado";
+                colEstado.MinimumWidth = 80;
+                colEstado.ReadOnly = true;
+                dgvClientes.Columns.Add(colEstado);
+            }
+
+            for (int i = 0; i < dgvClientes.Rows.Count; i++)
+            {
+                var row = dgvClientes.Rows[i];
+                var cliente = row.DataBoundItem as CapaEntidad.Cliente;
+                if (cliente != null)
+                {
+                    // Mostrar texto simple: "Activo" o "Inactivo"
+                    row.Cells[4].Value = cliente.Activo ? "Activo" : "Inactivo";
+                }
+            }
         }
 
         private void LimpiarCampos()
@@ -81,26 +129,14 @@ namespace CapaPresentacion
 
         private void dgvClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
-            {
-                return;
-            }
-
-            DataGridViewRow fila = dgvClientes.Rows[e.RowIndex];
-
-            txtIdCliente.Text = fila.Cells["IdCliente"].Value.ToString();
-            txtIdentificacion.Text = fila.Cells["Identificacion"].Value.ToString();
-            txtNombre.Text = fila.Cells["Nombre"].Value.ToString();
-            txtApellido.Text = fila.Cells["Apellido"].Value.ToString();
-            dtpFechaNacimiento.Value = Convert.ToDateTime(fila.Cells["FechaNacimiento"].Value).Date;
-            dtpFechaRegistro.Value = Convert.ToDateTime(fila.Cells["FechaRegistro"].Value).Date;
-            chkActivo.Checked = Convert.ToBoolean(fila.Cells["Activo"].Value);
-
-            txtIdCliente.Enabled = false;
+            // Intentionally do nothing on grid clicks per project-wide decision.
+            return;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            try
+            {
             if (!int.TryParse(txtIdCliente.Text, out int id))
             {
                 MessageBox.Show("El ID debe ser un número entero.");
@@ -129,6 +165,12 @@ namespace CapaPresentacion
 
             CargarClientes();
             LimpiarCampos();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Se produjo un error inesperado: {ex.Message}");
+            }
         }
 
         private void btnBuscarPorID_Click(object sender, EventArgs e)

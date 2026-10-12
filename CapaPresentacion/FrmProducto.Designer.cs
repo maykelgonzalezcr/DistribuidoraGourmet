@@ -96,21 +96,21 @@
             // 
             txtIdProducto.Location = new Point(169, 31);
             txtIdProducto.Name = "txtIdProducto";
-            txtIdProducto.Size = new Size(125, 23);
+            txtIdProducto.Size = new Size(200, 23);
             txtIdProducto.TabIndex = 5;
             // 
             // txtNombreProducto
             // 
             txtNombreProducto.Location = new Point(169, 68);
             txtNombreProducto.Name = "txtNombreProducto";
-            txtNombreProducto.Size = new Size(125, 23);
+            txtNombreProducto.Size = new Size(200, 23);
             txtNombreProducto.TabIndex = 6;
             // 
             // txtCategoria
             // 
             txtCategoria.Location = new Point(169, 105);
             txtCategoria.Name = "txtCategoria";
-            txtCategoria.Size = new Size(125, 23);
+            txtCategoria.Size = new Size(200, 23);
             txtCategoria.TabIndex = 7;
             // 
             // btnRegistrar
@@ -127,7 +127,7 @@
             // 
             nudPrecioVenta.Location = new Point(169, 142);
             nudPrecioVenta.Name = "nudPrecioVenta";
-            nudPrecioVenta.Size = new Size(125, 23);
+            nudPrecioVenta.Size = new Size(200, 23);
             nudPrecioVenta.TabIndex = 8;
             nudPrecioVenta.Enter += nudPrecioVenta_Enter;
             // 
@@ -153,6 +153,7 @@
             // 
             // dgvProductos
             // 
+            dgvProductos.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProductos.Location = new Point(39, 245);

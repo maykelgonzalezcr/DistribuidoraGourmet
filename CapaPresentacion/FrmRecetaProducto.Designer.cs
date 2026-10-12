@@ -137,6 +137,7 @@ namespace CapaPresentacion
             dgvRecetas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvRecetas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRecetas.Location = new Point(44, 215);
+            dgvRecetas.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvRecetas.MultiSelect = false;
             dgvRecetas.Name = "dgvRecetas";
             dgvRecetas.ReadOnly = true;

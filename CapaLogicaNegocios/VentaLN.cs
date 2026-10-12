@@ -18,10 +18,12 @@ namespace CapaLogicaNegocios
             int cantidad,
             DateTime fechaVenta)
         {
-            if (ventaAD.BuscarPorID(idVenta) != null)
+            try
             {
-                return "El ID de venta ya existe.";
-            }
+                if (ventaAD.BuscarPorID(idVenta) != null)
+                {
+                    return "El ID de venta ya existe.";
+                }
 
             Cliente? cliente =
                 clienteAD.BuscarPorID(idCliente);
@@ -50,6 +52,11 @@ namespace CapaLogicaNegocios
             if (produccion == null)
             {
                 return "La producción no existe.";
+            }
+
+            if (!produccion.Producto.Activo)
+            {
+                return "El producto asociado está inactivo.";
             }
 
             if (produccion.CantidadDisponible <= 0)
@@ -92,15 +99,20 @@ namespace CapaLogicaNegocios
                 impuesto,
                 totalVenta
             );
-
             if (!ventaAD.Agregar(venta))
             {
                 return "No hay espacio para registrar más ventas.";
             }
 
+            // Only deduct availability after the sale has been recorded
             produccion.CantidadDisponible -= cantidad;
 
             return null;
+        }
+            catch (Exception ex)
+            {
+                return $"Se produjo un error inesperado: {ex.Message}";
+            }
         }
 
         public Venta? BuscarPorID(int id)

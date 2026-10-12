@@ -135,6 +135,7 @@ namespace CapaPresentacion
             dgvProducciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvProducciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProducciones.Location = new Point(40, 227);
+            dgvProducciones.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvProducciones.MultiSelect = false;
             dgvProducciones.Name = "dgvProducciones";
             dgvProducciones.ReadOnly = true;

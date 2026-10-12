@@ -271,6 +271,10 @@ namespace CapaPresentacion
             dgvVentas.MultiSelect = false;
             dgvVentas.Name = "dgvVentas";
             dgvVentas.ReadOnly = true;
+            dgvVentas.AllowUserToAddRows = false;
+            dgvVentas.AllowUserToDeleteRows = false;
+            dgvVentas.RowHeadersVisible = false;
+            dgvVentas.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvVentas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvVentas.Size = new Size(700, 200);
             dgvVentas.TabIndex = 23;

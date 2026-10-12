@@ -20,7 +20,7 @@ namespace CapaLogicaNegocios
 
             if (string.IsNullOrWhiteSpace(ingrediente.UnidadMedida))
             {
-                return "La unidad de medida no puede estar vac8a.";
+                return "La unidad de medida no puede estar vacía.";
             }
 
             if (ingrediente.ExistenciaActual < 0)

@@ -179,6 +179,7 @@ namespace CapaPresentacion
             dgvCajeros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCajeros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCajeros.Location = new Point(42, 263);
+            dgvCajeros.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvCajeros.MultiSelect = false;
             dgvCajeros.Name = "dgvCajeros";
             dgvCajeros.ReadOnly = true;

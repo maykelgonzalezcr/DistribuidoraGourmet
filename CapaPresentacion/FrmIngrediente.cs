@@ -16,9 +16,13 @@ namespace CapaPresentacion
         public FrmIngrediente(IngredienteLN ingredienteLN)
         {
             InitializeComponent();
+            // Establecer máximos adecuados según el tipo de dato de la entidad
+            nudExistenciaActual.Maximum = decimal.MaxValue;
+            nudCostoUnitario.Maximum = decimal.MaxValue;
 
             this._ingredienteLN = ingredienteLN;
             CargarIngredientes();
+            this.MinimumSize = new System.Drawing.Size(800, 600);
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -75,20 +79,8 @@ namespace CapaPresentacion
 
         private void dgvIngredientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
-            {
-                return;
-            }
-
-            DataGridViewRow fila = dgvIngredientes.Rows[e.RowIndex];
-
-            txtIdIngrediente.Text = fila.Cells["IdIngrediente"].Value.ToString();
-            txtNombreIngrediente.Text = fila.Cells["NombreIngrediente"].Value.ToString();
-            txtUnidadMedida.Text = fila.Cells["UnidadMedida"].Value.ToString();
-            nudExistenciaActual.Value = Convert.ToDecimal(fila.Cells["ExistenciaActual"].Value);
-            nudCostoUnitario.Value = Convert.ToDecimal(fila.Cells["CostoUnitario"].Value);
-
-            txtIdIngrediente.Enabled = false;
+            // Intentionally do nothing on grid clicks per project-wide decision.
+            return;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)

@@ -19,6 +19,8 @@ namespace CapaLogicaNegocios
             int cantidadProducida,
             DateTime fechaProduccion)
         {
+            try
+            {
             if (produccionAD.BuscarPorID(idProduccion) != null)
             {
                 return "El ID de producción ya existe.";
@@ -103,6 +105,11 @@ namespace CapaLogicaNegocios
             }
 
             return null;
+            }
+            catch (Exception ex)
+            {
+                return $"Se produjo un error inesperado: {ex.Message}";
+            }
         }
 
         public Produccion? BuscarPorID(int id)

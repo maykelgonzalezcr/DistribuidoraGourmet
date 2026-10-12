@@ -135,9 +135,11 @@
             // nudCostoUnitario
             // 
             nudCostoUnitario.Location = new Point(164, 175);
+            nudCostoUnitario.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudCostoUnitario.Name = "nudCostoUnitario";
             nudCostoUnitario.Size = new Size(200, 23);
             nudCostoUnitario.TabIndex = 9;
+            nudCostoUnitario.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // btnActualizar
             // 
@@ -161,6 +163,7 @@
             // 
             // dgvIngredientes
             // 
+            dgvIngredientes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvIngredientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvIngredientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvIngredientes.Location = new Point(47, 242);
