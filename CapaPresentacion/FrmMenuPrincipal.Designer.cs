@@ -1,4 +1,14 @@
-﻿namespace CapaPresentacion
+﻿/*
+ * Universidad: Universidad Estatal a Distancia (UNED)
+ * Cuatrimestre: III Cuatrimestre 2026
+ * Proyecto: Proyecto #1 - Distribuidora Gourmet
+ * Descripción: Sistema de gestión de ingredientes, productos,
+ * recetas, clientes, cajeros, producción y ventas.
+ * Estudiante: Maykel Gonzalez Benavides
+ * Fecha: 11/10/2026
+ */
+
+namespace CapaPresentacion
 {
     partial class FrmMenuPrincipal
     {

@@ -14,6 +14,7 @@ namespace CapaPresentacion
     public partial class FrmVenta : Form
     {
         private VentaLN _ventaLN;
+        private bool _consultandoVenta;
 
         public FrmVenta(VentaLN ventaLN)
         {
@@ -182,6 +183,13 @@ namespace CapaPresentacion
 
         private void LimpiarCampos()
         {
+            _consultandoVenta = false;
+            cmbCliente.Enabled = true;
+            cmbCajero.Enabled = true;
+            cmbProduccion.Enabled = true;
+            nudCantidad.Enabled = true;
+            dtpFechaVenta.Enabled = true;
+            nudCantidad.Maximum = new decimal(int.MaxValue);
             txtIdVenta.Clear();
             cmbCliente.SelectedIndex = -1;
             cmbCajero.SelectedIndex = -1;
@@ -198,6 +206,12 @@ namespace CapaPresentacion
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (_consultandoVenta)
+            {
+                MessageBox.Show("Presione Limpiar para registrar una nueva venta.");
+                return;
+            }
+
             if (!int.TryParse(txtIdVenta.Text, out int id))
             {
                 MessageBox.Show("El ID debe ser un número entero.");
@@ -268,6 +282,8 @@ namespace CapaPresentacion
 
         private void cmbProduccion_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (_consultandoVenta) return;
+
             // Al cambiar la producción seleccionada, ajustar el máximo de cantidad
             // y recalcular totales según la producción y la cantidad actual.
             if (cmbProduccion.SelectedItem is Produccion p)
@@ -301,6 +317,8 @@ namespace CapaPresentacion
 
         private void nudCantidad_ValueChanged(object sender, EventArgs e)
         {
+            if (_consultandoVenta) return;
+
             // Recalcular SubTotal, Impuesto y Total en base a la producción seleccionada
             if (cmbProduccion.SelectedItem is Produccion p)
             {
@@ -342,6 +360,8 @@ namespace CapaPresentacion
                 return;
             }
 
+            // Suspender los limites y calculos de registro mientras se carga la venta historica.
+            _consultandoVenta = true;
             txtIdVenta.Text = venta.IdVenta.ToString();
             CargarClientes();
             CargarCajeros();
@@ -384,9 +404,8 @@ namespace CapaPresentacion
                 }
             }
 
-            // Ensure NumericUpDown range matches available stock and assign the stored quantity
-            nudCantidad.Minimum = Math.Min(nudCantidad.Minimum, 0);
-            nudCantidad.Maximum = decimal.MaxValue;
+            // La cantidad vendida es historica y no depende de la disponibilidad actual.
+            nudCantidad.Maximum = new decimal(int.MaxValue);
             nudCantidad.Value = venta.Cantidad;
             dtpFechaVenta.Value = venta.FechaVenta.Date;
 
@@ -397,6 +416,11 @@ namespace CapaPresentacion
             txtTipoVenta.Text = venta.TipoVenta;
 
             txtIdVenta.Enabled = false;
+            cmbCliente.Enabled = false;
+            cmbCajero.Enabled = false;
+            cmbProduccion.Enabled = false;
+            nudCantidad.Enabled = false;
+            dtpFechaVenta.Enabled = false;
         }
 
         private void dgvVentas_CellClick(object sender, DataGridViewCellEventArgs e)
